@@ -7,15 +7,27 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		0D07C834297A92D700696EBB /* DeviceManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0D07C833297A92D700696EBB /* DeviceManager.swift */; };
+		0D2620DC2976B69200A82EA1 /* EventTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0D2620DB2976B69200A82EA1 /* EventTableViewCell.swift */; };
+		0D2620DE2976CDA800A82EA1 /* DateFormatManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0D2620DD2976CDA800A82EA1 /* DateFormatManager.swift */; };
+		0D4E09D6297936D800894C7E /* NetworkRequestService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0D4E09D5297936D800894C7E /* NetworkRequestService.swift */; };
+		0D4E09D829795DC700894C7E /* NewEventViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0D4E09D729795DC700894C7E /* NewEventViewController.swift */; };
 		0D6A3AED2970087500AEA09F /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0D6A3AEC2970087500AEA09F /* AppDelegate.swift */; };
 		0D6A3AEF2970087500AEA09F /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0D6A3AEE2970087500AEA09F /* SceneDelegate.swift */; };
-		0D6A3AF12970087500AEA09F /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0D6A3AF02970087500AEA09F /* ViewController.swift */; };
+		0D6A3AF12970087500AEA09F /* MyEventsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0D6A3AF02970087500AEA09F /* MyEventsViewController.swift */; };
 		0D6A3AF42970087500AEA09F /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 0D6A3AF22970087500AEA09F /* Main.storyboard */; };
 		0D6A3AF62970087700AEA09F /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 0D6A3AF52970087700AEA09F /* Assets.xcassets */; };
 		0D6A3AF92970087700AEA09F /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 0D6A3AF72970087700AEA09F /* LaunchScreen.storyboard */; };
 		0D6A3B042970087700AEA09F /* MyScheduleTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0D6A3B032970087700AEA09F /* MyScheduleTests.swift */; };
 		0D6A3B0E2970087700AEA09F /* MyScheduleUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0D6A3B0D2970087700AEA09F /* MyScheduleUITests.swift */; };
 		0D6A3B102970087700AEA09F /* MyScheduleUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0D6A3B0F2970087700AEA09F /* MyScheduleUITestsLaunchTests.swift */; };
+		0D6A3B1D2970090200AEA09F /* Event.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0D6A3B1C2970090200AEA09F /* Event.swift */; };
+		0D6A3B1F2970091800AEA09F /* User.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0D6A3B1E2970091800AEA09F /* User.swift */; };
+		0D764FFD297EBB89002EA723 /* ImagePicker.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0D764FFC297EBB89002EA723 /* ImagePicker.swift */; };
+		0D7D8772297AC3B400B131FC /* MyProfileViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0D7D8771297AC3B400B131FC /* MyProfileViewController.swift */; };
+		0D81EA172975515C0087DEE9 /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0D81EA162975515C0087DEE9 /* LoginViewController.swift */; };
+		0DB0060F29715B1F0059D16A /* UserManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0DB0060E29715B1F0059D16A /* UserManager.swift */; };
+		0DB0061129715B310059D16A /* EventsManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0DB0061029715B310059D16A /* EventsManager.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -36,10 +48,15 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		0D07C833297A92D700696EBB /* DeviceManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DeviceManager.swift; sourceTree = "<group>"; };
+		0D2620DB2976B69200A82EA1 /* EventTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EventTableViewCell.swift; sourceTree = "<group>"; };
+		0D2620DD2976CDA800A82EA1 /* DateFormatManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DateFormatManager.swift; sourceTree = "<group>"; };
+		0D4E09D5297936D800894C7E /* NetworkRequestService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkRequestService.swift; sourceTree = "<group>"; };
+		0D4E09D729795DC700894C7E /* NewEventViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NewEventViewController.swift; sourceTree = "<group>"; };
 		0D6A3AE92970087500AEA09F /* MySchedule.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MySchedule.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		0D6A3AEC2970087500AEA09F /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		0D6A3AEE2970087500AEA09F /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		0D6A3AF02970087500AEA09F /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		0D6A3AF02970087500AEA09F /* MyEventsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MyEventsViewController.swift; sourceTree = "<group>"; };
 		0D6A3AF32970087500AEA09F /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		0D6A3AF52970087700AEA09F /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		0D6A3AF82970087700AEA09F /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
@@ -49,6 +66,13 @@
 		0D6A3B092970087700AEA09F /* MyScheduleUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = MyScheduleUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		0D6A3B0D2970087700AEA09F /* MyScheduleUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MyScheduleUITests.swift; sourceTree = "<group>"; };
 		0D6A3B0F2970087700AEA09F /* MyScheduleUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MyScheduleUITestsLaunchTests.swift; sourceTree = "<group>"; };
+		0D6A3B1C2970090200AEA09F /* Event.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Event.swift; sourceTree = "<group>"; };
+		0D6A3B1E2970091800AEA09F /* User.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = User.swift; sourceTree = "<group>"; };
+		0D764FFC297EBB89002EA723 /* ImagePicker.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImagePicker.swift; sourceTree = "<group>"; };
+		0D7D8771297AC3B400B131FC /* MyProfileViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MyProfileViewController.swift; sourceTree = "<group>"; };
+		0D81EA162975515C0087DEE9 /* LoginViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
+		0DB0060E29715B1F0059D16A /* UserManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserManager.swift; sourceTree = "<group>"; };
+		0DB0061029715B310059D16A /* EventsManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EventsManager.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -101,11 +125,23 @@
 			children = (
 				0D6A3AEC2970087500AEA09F /* AppDelegate.swift */,
 				0D6A3AEE2970087500AEA09F /* SceneDelegate.swift */,
-				0D6A3AF02970087500AEA09F /* ViewController.swift */,
+				0D6A3AF02970087500AEA09F /* MyEventsViewController.swift */,
 				0D6A3AF22970087500AEA09F /* Main.storyboard */,
 				0D6A3AF52970087700AEA09F /* Assets.xcassets */,
 				0D6A3AF72970087700AEA09F /* LaunchScreen.storyboard */,
 				0D6A3AFA2970087700AEA09F /* Info.plist */,
+				0D6A3B1C2970090200AEA09F /* Event.swift */,
+				0D6A3B1E2970091800AEA09F /* User.swift */,
+				0DB0060E29715B1F0059D16A /* UserManager.swift */,
+				0DB0061029715B310059D16A /* EventsManager.swift */,
+				0D81EA162975515C0087DEE9 /* LoginViewController.swift */,
+				0D2620DB2976B69200A82EA1 /* EventTableViewCell.swift */,
+				0D2620DD2976CDA800A82EA1 /* DateFormatManager.swift */,
+				0D4E09D5297936D800894C7E /* NetworkRequestService.swift */,
+				0D4E09D729795DC700894C7E /* NewEventViewController.swift */,
+				0D07C833297A92D700696EBB /* DeviceManager.swift */,
+				0D7D8771297AC3B400B131FC /* MyProfileViewController.swift */,
+				0D764FFC297EBB89002EA723 /* ImagePicker.swift */,
 			);
 			path = MySchedule;
 			sourceTree = "<group>";
@@ -258,8 +294,20 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				0D6A3AF12970087500AEA09F /* ViewController.swift in Sources */,
+				0D2620DC2976B69200A82EA1 /* EventTableViewCell.swift in Sources */,
+				0DB0060F29715B1F0059D16A /* UserManager.swift in Sources */,
+				0D7D8772297AC3B400B131FC /* MyProfileViewController.swift in Sources */,
+				0DB0061129715B310059D16A /* EventsManager.swift in Sources */,
+				0D6A3B1D2970090200AEA09F /* Event.swift in Sources */,
+				0D4E09D6297936D800894C7E /* NetworkRequestService.swift in Sources */,
+				0D07C834297A92D700696EBB /* DeviceManager.swift in Sources */,
+				0D6A3AF12970087500AEA09F /* MyEventsViewController.swift in Sources */,
+				0D81EA172975515C0087DEE9 /* LoginViewController.swift in Sources */,
 				0D6A3AED2970087500AEA09F /* AppDelegate.swift in Sources */,
+				0D6A3B1F2970091800AEA09F /* User.swift in Sources */,
+				0D2620DE2976CDA800A82EA1 /* DateFormatManager.swift in Sources */,
+				0D764FFD297EBB89002EA723 /* ImagePicker.swift in Sources */,
+				0D4E09D829795DC700894C7E /* NewEventViewController.swift in Sources */,
 				0D6A3AEF2970087500AEA09F /* SceneDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

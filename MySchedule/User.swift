@@ -7,6 +7,17 @@
 
 import UIKit
 
-class User: NSObject {
+class User: Codable {
+
+    var userName: String
+    
+    var password: String
+    
+    init(json: [String: Any]) {
+        
+        self.userName = json["user"] as? String ?? ""
+        
+        self.password = json["pass"] as? String ?? ""
+    }
 
 }
