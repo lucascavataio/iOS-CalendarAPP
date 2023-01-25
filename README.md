@@ -6,5 +6,5 @@
 
 > To open this project you must need XCode and open this on there.
 > 
-> Suggestion: Run the app on an iPhone 11
+> Suggestion: Run the app on an iPhone 11 for best performance
 
