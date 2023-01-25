@@ -9,10 +9,6 @@ import UIKit
 
 class LoginViewController: UIViewController {
     
-    let userManager: UserManager = UserManager()
-    
-    let eventsManager: EventsManager = EventsManager()
-    
     @IBOutlet weak var logInButton: UIButton!
     
     @IBOutlet weak var signUpButton: UIButton!
@@ -49,9 +45,9 @@ class LoginViewController: UIViewController {
         super.viewDidLoad()
         // Do any additional setup after loading the view.
         
-        userManager.LoadUsers()
+        UserManager.LoadUsers()
         
-        for u in userManager.userList{
+        for u in UserManager.userList{
             print("User:", u.userName, "Password:", u.password)
         }
     }
@@ -90,11 +86,11 @@ class LoginViewController: UIViewController {
     
     func CheckUserExists() -> Bool{
         
-        userManager.LoadUsers()
+        UserManager.LoadUsers()
         
         var userFounded: Bool = false
         
-        for u in userManager.userList{
+        for u in UserManager.userList{
             if u.userName == usernameInputField.text{
                 userFounded = true
             }
@@ -145,10 +141,9 @@ class LoginViewController: UIViewController {
             
         ]
         
-        NetworkRequestService.DoPost(_paramsDic: paramsDic,  _url: self.userManager.urlLogin!)
+        NetworkRequestService.DoPost(_paramsDic: paramsDic,  _url: UserManager.urlLogin!)
         
-        userManager.currentUser.userName = usernameInputField.text!
-        userManager.currentUser.password = passInputField.text!
+        UserManager.currentUser = User(json: paramsDic)
         
         DispatchQueue.main.asyncAfter(deadline: .now() + .seconds(1)) {
             if NetworkRequestService.loged{
@@ -176,7 +171,7 @@ class LoginViewController: UIViewController {
             
         ]
         
-        NetworkRequestService.DoPost(_paramsDic: paramsDic,  _url: self.userManager.urlSignup!)
+        NetworkRequestService.DoPost(_paramsDic: paramsDic,  _url: UserManager.urlSignup!)
         
         DispatchQueue.main.asyncAfter(deadline: .now() + .seconds(1)) {
             if NetworkRequestService.loged{

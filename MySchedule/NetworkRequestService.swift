@@ -14,12 +14,10 @@ class NetworkRequestService: NSObject {
     static func DoPost(_paramsDic: [String: Any], _url: URL){
         
         var successOperation: Bool = false
-    
-        let userManager: UserManager = UserManager()
-        
+
         let eventManager: EventsManager = EventsManager()
         
-        userManager.LoadUsers()
+        UserManager.LoadUsers()
         
         eventManager.LoadEvents()
         
@@ -76,7 +74,7 @@ class NetworkRequestService: NSObject {
             
             print("Success Operation:", successOperation)
             
-            userManager.LoadUsers()
+            UserManager.LoadUsers()
             eventManager.LoadEvents()
             
             self.loged = successOperation

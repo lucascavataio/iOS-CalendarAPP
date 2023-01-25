@@ -9,17 +9,17 @@ import UIKit
 
 class UserManager {
 
-    var userList: [User] = []
+    static var userList: [User] = []
     
-    var currentUser: User = User(json: [:])
+    static var currentUser: User = User(json: [:])
     
-    let urlUsers = URL(string:"https://superapi.netlify.app/api/db/users")
+    static let urlUsers = URL(string:"https://superapi.netlify.app/api/db/users")
     
-    let urlLogin = URL(string:"https://superapi.netlify.app/api/login")
+    static let urlLogin = URL(string:"https://superapi.netlify.app/api/login")
     
-    let urlSignup = URL(string:"https://superapi.netlify.app/api/register")
+    static let urlSignup = URL(string:"https://superapi.netlify.app/api/register")
 
-    func LoadUsers(){
+    static func LoadUsers(){
         
         userList.removeAll()
         

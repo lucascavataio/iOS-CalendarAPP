@@ -9,8 +9,6 @@ import UIKit
 
 class MyProfileViewController: UIViewController, UITableViewDelegate, UITableViewDataSource {
     
-    let userManager: UserManager = UserManager()
-    
     @IBOutlet weak var recentEventsTableView: UITableView!
     
     @IBOutlet weak var userNameLabel: UILabel!
@@ -46,7 +44,7 @@ class MyProfileViewController: UIViewController, UITableViewDelegate, UITableVie
         recentEventsTableView.dataSource = self
         recentEventsTableView.delegate = self
         
-        userNameLabel.text = userManager.currentUser.userName
+        userNameLabel.text = UserManager.currentUser.userName
         
         self.imagePicker = ImagePicker(presentationController: self, delegate: self)
         
@@ -82,6 +80,7 @@ extension MyProfileViewController: ImagePickerDelegate {
     func didSelect(image: UIImage?) {
         self.profilePicture.image = image
     }
+
 }
 
 
