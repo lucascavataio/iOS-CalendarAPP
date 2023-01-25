@@ -125,11 +125,11 @@
 			children = (
 				0D6A3AEC2970087500AEA09F /* AppDelegate.swift */,
 				0D6A3AEE2970087500AEA09F /* SceneDelegate.swift */,
-				0D6A3AF02970087500AEA09F /* MyEventsViewController.swift */,
 				0D6A3AF22970087500AEA09F /* Main.storyboard */,
 				0D6A3AF52970087700AEA09F /* Assets.xcassets */,
 				0D6A3AF72970087700AEA09F /* LaunchScreen.storyboard */,
 				0D6A3AFA2970087700AEA09F /* Info.plist */,
+				0D6A3AF02970087500AEA09F /* MyEventsViewController.swift */,
 				0D6A3B1C2970090200AEA09F /* Event.swift */,
 				0D6A3B1E2970091800AEA09F /* User.swift */,
 				0DB0060E29715B1F0059D16A /* UserManager.swift */,

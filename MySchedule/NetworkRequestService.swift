@@ -89,54 +89,42 @@ class NetworkRequestService: NSObject {
 
     }
     
-    static func DoGet(){
+    static func DoGet(_url: URL)-> [Any]{
+        var data = Data()
         
+        var tempJsonList: [Any] = []
+        
+        do {
+            data = try Data(contentsOf: _url)
+        } catch {
+            print("Error was ocurred")
+        }
+        
+        do {
+            
+            let json = try JSONSerialization.jsonObject(with: data, options: .mutableContainers)
+            
+
+            
+            
+            for e in json as! [Any] {
+                
+                
+                if type(of: e) != NSNull.self{
+                    tempJsonList.append(e)
+                }
+                
+            }
+            
+            
+        } catch let errorJson {
+            print(errorJson)
+        }
+        
+        return tempJsonList
     }
     
-    static func DoDelete(){
-        
-        let userManager: UserManager = UserManager()
-        
-        let eventManager: EventsManager = EventsManager()
-        
-                // Create the request
-        var request = URLRequest(url: eventManager.GET_URL!)
-                request.httpMethod = "DELETE"
-                URLSession.shared.dataTask(with: request) { data, response, error in
-                    guard error == nil else {
-                        print("Error: error calling DELETE")
-                        print(error!)
-                        return
-                    }
-                    guard let data = data else {
-                        print("Error: Did not receive data")
-                        return
-                    }
-                    guard let response = response as? HTTPURLResponse, (200 ..< 299) ~= response.statusCode else {
-                        print("Error: HTTP request failed")
-                        return
-                    }
-                    do {
-                        guard let jsonObject = try JSONSerialization.jsonObject(with: data) as? [String: Any] else {
-                            print("Error: Cannot convert data to JSON")
-                            return
-                        }
-                        guard let prettyJsonData = try? JSONSerialization.data(withJSONObject: jsonObject, options: .prettyPrinted) else {
-                            print("Error: Cannot convert JSON object to Pretty JSON data")
-                            return
-                        }
-                        guard let prettyPrintedJson = String(data: prettyJsonData, encoding: .utf8) else {
-                            print("Error: Could print JSON in String")
-                            return
-                        }
-                        
-                        print(prettyPrintedJson)
-                    } catch {
-                        print("Error: Trying to convert JSON data to string")
-                        return
-                    }
-                }.resume()
-    }
+    
 }
 
 

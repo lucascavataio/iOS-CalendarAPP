@@ -21,47 +21,14 @@ class UserManager {
 
     func LoadUsers(){
         
-        var data = Data()
+        userList.removeAll()
         
-        do {
-            data = try Data(contentsOf: urlUsers!)
-        } catch {
-            print("Error was ocurred")
-        }
-        
-        do {
+        let tempJson = NetworkRequestService.DoGet(_url: urlUsers!)
             
-            let json = try JSONSerialization.jsonObject(with: data, options: .mutableContainers)
-            
-            userList.removeAll()
-
-            var tempJsonList: [Any] = []
-            
-            for e in json as! [Any] {
-                
-                
-                if type(of: e) != NSNull.self{
-                    tempJsonList.append(e)
-                }
-                
-            }
-            
-            for user in tempJsonList as! [[String : Any]] {
+        for user in tempJson as! [[String : Any]] {
                 userList.append(User(json: user))
-            }
-            
-            
-        } catch let errorJson {
-            print(errorJson)
         }
-        
+
     }
     
-    func UploadUsers(){
-        
-    }
-    
-    func ReloadUsers(){
-        
-    }
 }

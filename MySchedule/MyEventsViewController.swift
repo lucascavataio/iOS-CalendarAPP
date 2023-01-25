@@ -77,11 +77,7 @@ class MyEventsViewController: UIViewController, UITableViewDelegate, UITableView
         eventListTableView.reloadData()
     }
     
-    
-    @IBAction func DeleteEventOnClick(_ sender: UIButton) {
-        NetworkRequestService.DoDelete()
-    }
-    
+
     func SortEventsList(){
         sortedByRecentDate = !sortedByRecentDate
         

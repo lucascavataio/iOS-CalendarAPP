@@ -18,46 +18,21 @@ class EventsManager {
     let POST_URL = URL(string:"https://superapi.netlify.app/api/db/eventos")
     
     func LoadEvents(){
-        var data = Data()
         
-        do {
-            data = try Data(contentsOf: GET_URL!)
-        } catch {
-            print("Error was ocurred")
+        eventsList.removeAll()
+        
+        let tempJson = NetworkRequestService.DoGet(_url: GET_URL!)
+        
+        for event in tempJson as! [[String : Any]] {
+            eventsList.append(Event(json: event))
         }
         
-        do {
-            
-            let json = try JSONSerialization.jsonObject(with: data, options: .mutableContainers)
-            
-            eventsList.removeAll()
-            
-            var tempJsonList: [Any] = []
-            
-            for e in json as! [Any] {
-                
-                
-                if type(of: e) != NSNull.self{
-                    tempJsonList.append(e)
-                }
-                
-            }
-            
-            for event in tempJsonList as! [[String : Any]] {
-                eventsList.append(Event(json: event))
-            }
-            
-            OrderEventList(_byRecent: true)
-            
-        } catch let errorJson {
-            print(errorJson)
-        }
     }
     
     func UploadEvents(_name: String, _date: Date){
         
         let params: [String : Any] = [
-        
+            
             "name": _name,
             "date": _date.timeIntervalSince1970
             

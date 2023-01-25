@@ -490,7 +490,7 @@
                                         <rect key="frame" x="10" y="10" width="394" height="65"/>
                                         <subviews>
                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="wFq-8G-Sq5">
-                                                <rect key="frame" x="0.0" y="0.0" width="172.5" height="65"/>
+                                                <rect key="frame" x="0.0" y="0.0" width="394" height="65"/>
                                                 <state key="normal" title="Button"/>
                                                 <buttonConfiguration key="configuration" style="filled" imagePadding="0.0">
                                                     <imageReference key="image" image="plus.app.fill" catalog="system" symbolScale="large"/>
@@ -498,17 +498,6 @@
                                                 </buttonConfiguration>
                                                 <connections>
                                                     <segue destination="wkI-8g-8sO" kind="show" id="Lez-Bs-Ock"/>
-                                                </connections>
-                                            </button>
-                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="kcP-WE-3C2">
-                                                <rect key="frame" x="221.5" y="0.0" width="172.5" height="65"/>
-                                                <state key="normal" title="Button"/>
-                                                <buttonConfiguration key="configuration" style="filled" imagePadding="0.0">
-                                                    <imageReference key="image" image="trash.fill" catalog="system" symbolScale="large"/>
-                                                    <color key="baseBackgroundColor" red="0.016090113669633865" green="0.0" blue="0.0038981249090284109" alpha="0.39390249869999999" colorSpace="custom" customColorSpace="sRGB"/>
-                                                </buttonConfiguration>
-                                                <connections>
-                                                    <action selector="DeleteEventOnCLick:" destination="ytu-Tn-RzX" eventType="touchUpInside" id="kv4-0h-yc4"/>
                                                 </connections>
                                             </button>
                                         </subviews>
@@ -642,7 +631,6 @@
         <image name="goforward" catalog="system" width="121" height="128"/>
         <image name="person.fill" catalog="system" width="128" height="120"/>
         <image name="plus.app.fill" catalog="system" width="128" height="114"/>
-        <image name="trash.fill" catalog="system" width="121" height="128"/>
         <systemColor name="systemGray3Color">
             <color red="0.7803921568627451" green="0.7803921568627451" blue="0.80000000000000004" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
         </systemColor>
