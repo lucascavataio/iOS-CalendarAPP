@@ -123,24 +123,16 @@
 		0D6A3AEB2970087500AEA09F /* MySchedule */ = {
 			isa = PBXGroup;
 			children = (
+				0D856AC629816721004012A1 /* Managers */,
+				0D856AC529816713004012A1 /* Objects */,
+				0D856AC4298166EB004012A1 /* ViewControllers */,
 				0D6A3AEC2970087500AEA09F /* AppDelegate.swift */,
 				0D6A3AEE2970087500AEA09F /* SceneDelegate.swift */,
 				0D6A3AF22970087500AEA09F /* Main.storyboard */,
 				0D6A3AF52970087700AEA09F /* Assets.xcassets */,
 				0D6A3AF72970087700AEA09F /* LaunchScreen.storyboard */,
 				0D6A3AFA2970087700AEA09F /* Info.plist */,
-				0D6A3AF02970087500AEA09F /* MyEventsViewController.swift */,
-				0D6A3B1C2970090200AEA09F /* Event.swift */,
-				0D6A3B1E2970091800AEA09F /* User.swift */,
-				0DB0060E29715B1F0059D16A /* UserManager.swift */,
-				0DB0061029715B310059D16A /* EventsManager.swift */,
-				0D81EA162975515C0087DEE9 /* LoginViewController.swift */,
-				0D2620DB2976B69200A82EA1 /* EventTableViewCell.swift */,
-				0D2620DD2976CDA800A82EA1 /* DateFormatManager.swift */,
 				0D4E09D5297936D800894C7E /* NetworkRequestService.swift */,
-				0D4E09D729795DC700894C7E /* NewEventViewController.swift */,
-				0D07C833297A92D700696EBB /* DeviceManager.swift */,
-				0D7D8771297AC3B400B131FC /* MyProfileViewController.swift */,
 				0D764FFC297EBB89002EA723 /* ImagePicker.swift */,
 			);
 			path = MySchedule;
@@ -161,6 +153,38 @@
 				0D6A3B0F2970087700AEA09F /* MyScheduleUITestsLaunchTests.swift */,
 			);
 			path = MyScheduleUITests;
+			sourceTree = "<group>";
+		};
+		0D856AC4298166EB004012A1 /* ViewControllers */ = {
+			isa = PBXGroup;
+			children = (
+				0D6A3AF02970087500AEA09F /* MyEventsViewController.swift */,
+				0D4E09D729795DC700894C7E /* NewEventViewController.swift */,
+				0D7D8771297AC3B400B131FC /* MyProfileViewController.swift */,
+				0D81EA162975515C0087DEE9 /* LoginViewController.swift */,
+			);
+			path = ViewControllers;
+			sourceTree = "<group>";
+		};
+		0D856AC529816713004012A1 /* Objects */ = {
+			isa = PBXGroup;
+			children = (
+				0D2620DB2976B69200A82EA1 /* EventTableViewCell.swift */,
+				0D6A3B1C2970090200AEA09F /* Event.swift */,
+				0D6A3B1E2970091800AEA09F /* User.swift */,
+			);
+			path = Objects;
+			sourceTree = "<group>";
+		};
+		0D856AC629816721004012A1 /* Managers */ = {
+			isa = PBXGroup;
+			children = (
+				0D2620DD2976CDA800A82EA1 /* DateFormatManager.swift */,
+				0DB0060E29715B1F0059D16A /* UserManager.swift */,
+				0DB0061029715B310059D16A /* EventsManager.swift */,
+				0D07C833297A92D700696EBB /* DeviceManager.swift */,
+			);
+			path = Managers;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
